@@ -1,0 +1,1 @@
+how and why to avoid Alamofire in your project

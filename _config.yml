@@ -1,0 +1,34 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Devin McKaskle
+email: devin.mckaskle@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Hi, I’m Devin. I’m a software developer from Austin, Texas.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://devinmckaskle.com" # the base hostname & protocol for your site
+destination: public_html
+
+twitter_username: devinmckaskle
+github_username: mckaskle
+google_analytics_tracking_id: UA-36620419-1
+
+# Build settings
+exclude: [build.sh, serve.sh]
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+gems: [jekyll-paginate]
+
+paginate: 10
+paginate_path: "/page/:num/"

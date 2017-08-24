@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Devin McKaskle</title>
+    <description>Hi, I’m Devin. I’m a software developer from Austin, Texas.
+</description>
+    <link>https://devinmckaskle.com/</link>
+    <atom:link href="https://devinmckaskle.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 23 Apr 2017 21:21:17 -0500</pubDate>
+    <lastBuildDate>Sun, 23 Apr 2017 21:21:17 -0500</lastBuildDate>
+    <generator>Jekyll v3.4.0</generator>
+    
+  </channel>
+</rss>

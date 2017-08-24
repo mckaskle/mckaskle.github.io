@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+    
+    <div class="row">
+      <div class="small-12 columns">
+        <hr>
+      </div>
+    </div>
+    
+    <div class="row">
+      <nav id="side-nav" class="medium-3 columns hide-for-small-only" data-sticky-container>
+        <div class="sticky" data-sticky data-anchor="main-content">
+          {% include nav-content.html %}
+        </div>
+      </nav>
+      
+      <main id="main-content" class="medium-8 medium-offset-1 columns">
+        {{ content }}
+      </main>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

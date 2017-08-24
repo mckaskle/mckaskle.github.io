@@ -1,0 +1,3 @@
+- want to start with ios because it's what I know and more people use it
+- app is similar to omnifocus or evernote, it wants to be on every platform; w/ Vesper learnings I think that I will try to do a mac app first
+- means reading all of the programming guides

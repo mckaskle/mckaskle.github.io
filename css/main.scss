@@ -1,0 +1,87 @@
+---
+---
+
+$body-font-family: system, -apple-system, 'HelveticaNeue', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif, !default;
+
+
+@import 'foundation';
+@import 'highlight';
+@include foundation-everything;
+
+article {
+  margin-bottom: 6em;
+}
+
+article.last {
+  margin-bottom: 0.5rem;
+}
+
+header.post-header a {
+  color: $body-font-color;
+
+  &:hover,
+  &:focus {
+    color: $anchor-color;
+  }
+}
+
+p > a {
+  font-weight: bold;
+}
+
+.app-icons.row {
+	h5 {
+		margin-bottom: 2rem;
+		margin-top: 1rem;
+	}
+}
+
+.artwork {
+	margin: auto;
+	position: relative;
+	width: 120px;
+	
+	img {
+		height: 120px;
+		width: 120px;
+	}
+	
+	span.mask {
+		background-image: url('/img/past-work/mask.png');
+		height: 120px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 120px;
+	}
+}
+
+.highlight {
+	margin-bottom: 1rem;
+	overflow-y: scroll;
+	padding: 0.6rem;
+	
+	.err {
+		border: none;
+	}
+}
+
+.pagination-current {
+  display: inline !important;
+}
+
+#side-nav {
+  margin-top: 12px;
+}
+
+#site-header {
+  a {
+    color: $body-font-color;
+  }
+  
+  h1 {
+    margin-top: 48px;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,4 @@
+- include asynchronous operation class
+- it should include a ResultHandler argument that is generic
+- include an example subclass that specifies the result handler
+- mention Khanlou's promises and waiting for native swift constructs for asyncronous work

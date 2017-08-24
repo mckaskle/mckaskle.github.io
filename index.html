@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+  <article class="post {% if post.previous == nil %}last{% endif %}" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+      <h2 class="post-title" itemprop="name headline"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+      {{ post.content }}
+    </div>
+    
+    <footer class="post-meta subheader">
+      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%-d %b %Y" }}</time>
+    
+      {% if post.author %}
+        <!-- •
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name">{{ post.author }}</span>
+        </span> -->
+      {% endif %}
+    </footer>
+
+  </article>
+  
+{% endfor %}
+
+
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+  <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+    {% if paginator.previous_page %}
+      <li class="pagination-previous"><a href="{{ paginator.previous_page_path }}" aria-label="Next page">Previous</a></li>
+    {% else %}
+      <li class="pagination-previous disabled">Previous</li>
+    {% endif %}
+  
+    <li class="pagination-current"><span class="show-for-sr">You're on page </span>{{ paginator.page }} of {{ paginator.total_pages }}</li>
+    <!-- <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> -->
+  
+    {% if paginator.next_page %}
+      <li class="pagination-next"><a href="{{ paginator.next_page_path }}" aria-label="Next page">Next</a></li>
+    {% else %}
+      <li class="pagination-next disabled">Next</li>
+    {% endif %}
+  </ul>
+{% endif %}
